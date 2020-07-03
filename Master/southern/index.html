@@ -41,11 +41,7 @@
                 font-size: 3.5rem;
             }
         }
-        .t-dish-image:hover {
-  animation: shake 0.5s;
-  animation-iteration-count: infinite;
-}
-
+       
 @keyframes shake {
   0% { transform: translate(1px, 1px) rotate(0deg); }
   10% { transform: translate(-1px, -2px) rotate(-1deg); }
@@ -71,11 +67,67 @@
 
 
 <body>
+<!-- navbar -->
+<nav class="navbar navbar-light navbar-expand-lg fixed-top navbar-fixed-top">
+    <div class="container">
+
+        <!-- Navbar: Brand -->
+        <a class="navbar-brand d-lg-none" href="index.html">Touché</a>
+
+        <!-- Navbar: Toggler -->
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        
+        <!-- Navbar: Collapse -->
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+            <!-- Navbar navigation: Left -->
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="about-us.html">About Us</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="http://example.com" id="nav-item__menu" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        Menu
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="nav-item__menu">
+                        <a class="dropdown-item" href="menu.html">Menu: Standard</a>
+                        <a class="dropdown-item" href="menu_no-images.html">Menu: No Images</a>
+                    </div>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="reservation.html">Reservation</a>
+                </li>
+            </ul>
+
+            <!-- Navbar: Brand -->
+            <a class="navbar-brand d-none d-lg-flex" href="index.html">
+                Touché
+            </a>
+
+            <!-- Navbar navigation: Right -->
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="news-and-events.html">News & Events</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="gallery.html">Gallery</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="contact-us.html">Contact</a>
+                </li>
+            </ul>
+
+        </div> <!-- / .navbar-collapse -->
+
+    </div> <!-- / .container -->
+</nav>
+<!--  -->
+
     <!-- gioi thieu 3 mon -->
     <main role="main">
-        <!-- 1 tam chinh giua -->
-
-
+       
         <!-- 3 tam chay -->
         <div id="carouselExampleInterval" class="carousel slide  " data-ride="carousel">
             <div class="carousel-inner head-style">
@@ -230,10 +282,7 @@
 
 
         <!-- FOOTER -->
-        <footer class="container">
-            <p class="float-right"><a href="#">Back to top</a></p>
-            <p>&copy; 2017-2020 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-        </footer>
+        
     </main>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js"
         integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n"

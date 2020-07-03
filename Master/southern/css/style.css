@@ -1,3 +1,28 @@
+/* nav bar */
+.navbar-light{
+    background-color: transparent;
+    
+}
+.fixed-top {
+    position: fixed;
+    z-index: 1030;
+    right: 0;
+    left: 0;
+}
+  .paralax-mirror {
+
+        visibility: visible;
+        z-index: -100;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+        overflow: hidden;
+        height: 642px;
+        width: 625px;
+        transform: translate3d(0px, -70px, 0px);
+    }
+    
+/* nav bar */
 .head-style {
     height: 750px;
     align-items: center;
@@ -28,27 +53,55 @@ width: 100%;
     border-radius: 30px;
     object-fit: cover;
     width: 100%;
+    animation: shake 0.5s;
+  animation-iteration-count: infinite;
 }
+/* hinh banh mi */
 .t-dish-image-banh-mi {
     background: url(/Master/southern/img/south-map-1.jpg) repeat center;
+    animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.t-dish-image-banh-mi:hover {
+    animation: none;
+    background-image: none;
     background-size: 100%;
     border-radius: 30px;
 }
+/* hinh com tam */
 .t-dish-image-com-tam {
-    background:url(/Master/southern/img/south-map-2.jpg) repeat center;
+    background: url(/Master/southern/img/south-map-2.jpg) repeat center;
+    animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.t-dish-image-com-tam:hover {
+    animation: none;
+    background-image: none;
     background-size: 100%;
     border-radius: 30px;
 }
+/* hinh goi cuon */
 .t-dish-image-goi-cuon {
     background:url(/Master/southern/img/south-map-3.jpg) repeat center;
+    animation: shake 0.5s;
+  animation-iteration-count: infinite;
+}
+.t-dish-image-goi-cuon:hover {
+    animation: none;
+    background-image: none;
     background-size: 100%;
     border-radius: 30px;
 }
 p {
     background-color:rgba(223, 223, 223, 0.651);
     padding-left: 40px;
+    padding-right:20px;
     border-radius: 30px;
     font-family: 'Roboto Condensed', sans-serif;
 }
 
 
+.navbar-fixed-top.scrolled {
+    background-color: #fff !important;
+    transition: background-color 200ms linear;
+  }
