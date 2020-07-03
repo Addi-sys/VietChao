@@ -40,3 +40,17 @@ footer {
     
 }
 
+#card1 {
+    background: url(https://img.wallpapersafari.com/desktop/1600/900/38/93/H3f0a1.jpg)no-repeat;
+    background-size:cover;
+    min-height: 600px;
+    display:flex;
+    align-items: center;
+
+}
+.card-1 {
+    background-color: rgba(255, 255, 255, 0.445);
+    border-radius: 30px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
