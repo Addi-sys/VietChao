@@ -24,11 +24,11 @@ body {
 }
 
 .navbar-nav {
-    border: 1px solid black;
-}
+    /* border: 1px solid black;
+/* }  */
 
 .navbar-brand {
-    border: 1px solid black;
+    /* border: 1px solid black; */
 }
 
 .carousel {
@@ -51,3 +51,4 @@ nav {
 .navbar-light {
     background-color: #00000000;
 }
+
